@@ -9,6 +9,8 @@ const palette = {
 
   //White
   primaryWhite: '#fff',
+  //White
+  primaryBlue: 'blue',
 
   transparent: 'transparent',
 };
@@ -19,6 +21,7 @@ const theme = createTheme({
     black: palette.primaryBlack,
     red: palette.primaryRed,
     white: palette.primaryWhite,
+    blue: palette.primaryBlue,
   },
   spacing: {
     xs: 4,
@@ -49,63 +52,37 @@ const theme = createTheme({
   },
   textVariants: {
     defaults: {},
-
-    buttonLabel: {
-      fontSize: 18,
-      fontFamily: 'Montserrat-Regular',
-      color: 'defaultTextColor',
-    },
-    buttonWhiteLabel: {
-      fontSize: 18,
-      fontFamily: 'Montserrat-Regular',
-      color: 'buttonWhitePrimaryText',
-    },
-    outlinedButtonLabel: {
-      fontSize: 18,
-      fontFamily: 'Montserrat-Regular',
-      color: 'buttonRedPrimaryBackground',
-    },
     header: {
-      fontSize: 22,
+      fontSize: 32,
       fontFamily: 'Montserrat-Bold',
-      lineHeight: 20,
+      lineHeight: 40,
       textAlign: 'center',
       color: 'black',
+      fontWeight: '700',
     },
 
     subHeader: {
-      fontSize: 20,
-      fontFamily: 'Montserrat',
-      // fontFamily: 'Montserrat-Regular',
-      lineHeight: 24,
+      fontSize: 26,
+      fontFamily: 'Montserrat-Regular',
+      lineHeight: 34,
       textAlign: 'center',
       color: 'black',
     },
 
     content: {
-      fontSize: 20,
+      fontSize: 18,
       fontFamily: 'Montserrat-Light',
-      lineHeight: 24,
+      lineHeight: 26,
       textAlign: 'center',
       color: 'black',
     },
-    codeInputText: {
-      fontFamily: 'Montserrat',
-      fontWeight: '500',
-      width: 42,
-      height: 51,
-      lineHeight: 49,
-      fontSize: 32,
-      // borderBottomWidth: 1,
-      // borderBottomColor: 'buttonDisabledBackground',
+    link: {
+      fontSize: 18,
+      fontFamily: 'Montserrat-Light',
+      lineHeight: 26,
       textAlign: 'center',
-      color: 'black',
-    },
-    divider: {
-      width: '100%',
-      backgroundColor: 'divider',
-      height: 1,
-      marginVertical: 'm',
+      textDecorationLine: 'underline',
+      color: 'blue',
     },
   },
 
