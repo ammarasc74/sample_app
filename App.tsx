@@ -1,11 +1,16 @@
-import React from 'react';
-import {View, Text} from 'react-native';
+import React, {JSX} from 'react';
+import {ThemeProvider} from '@shopify/restyle';
+import theme from './src/Theme/';
+import Route from './src/Services/navigation/navigation';
+import {SafeAreaView} from 'react-native';
 
-function App(): React.JSX.Element {
+function App(): JSX.Element {
   return (
-    <View>
-      <Text>Hello world</Text>
-    </View>
+    <SafeAreaView style={{flex: 1}}>
+      <ThemeProvider theme={theme}>
+        <Route />
+      </ThemeProvider>
+    </SafeAreaView>
   );
 }
 
