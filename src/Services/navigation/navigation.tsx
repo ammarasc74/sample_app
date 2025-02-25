@@ -2,7 +2,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {navigationRef} from './utils';
-import Home from '../../Screens/Home/index';
+import Tabs from './Tabs';
 
 export type RootStackParamList = {
   Home: String;
@@ -19,7 +19,7 @@ export default function App() {
           animationTypeForReplace: 'pop',
         }}
         initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Home" component={Tabs} />
       </Stack.Navigator>
     </NavigationContainer>
   );
