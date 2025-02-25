@@ -1,5 +1,5 @@
 import React from 'react';
-import {Layout, Box, Text} from '../../Components';
+import {Layout, Box, Text} from '@/Components/';
 
 const Profile = () => {
   return (

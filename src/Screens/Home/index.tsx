@@ -1,6 +1,6 @@
 import React from 'react';
 import {Alert, Linking} from 'react-native';
-import {Layout, Box, Text} from '../../Components';
+import {Layout, Box, Text} from '@/Components/';
 import ImageSlider from './components/ImageSlider';
 
 const Home = () => {
